@@ -1,0 +1,55 @@
+%------node1------%
+
+A = node1:start(0).
+C = node1:start(2, A).
+B = node1:start(1, A).
+D = node1:start(3, A).
+
+A!ring.
+
+A!probe.
+
+%-----test1-----%
+
+A = test1:start(10).
+
+A ! info.
+
+
+%------node2------%
+
+A = node2:start(1).
+B = node2:start(2, A).
+C = node2:start(3, A).
+D = node2:start(4, A).
+
+A ! {add, 0, value, ref, self()}.
+A ! {add, 1, value, ref, self()}.
+A ! {add, 2, value, ref, self()}.
+A ! {add, 3, value, ref, self()}.
+A ! {add, 4, value, ref, self()}.
+A ! {add, 5, value, ref, self()}.
+A ! {add, 6, value, ref, self()}.
+A ! {add, 7, value, ref, self()}.
+A ! {add, 8, value, ref, self()}.
+A ! {add, 9, value, ref, self()}.
+A ! {add, 10, value, ref, self()}.
+
+A ! print.
+B ! print.
+
+B ! printreplica.
+
+A ! stop.
+
+B ! print.
+
+%-----test2-----%
+
+A = test2:start(node2, 1, 1000).
+A = test2:start(node2, 2, 500).
+A = test2:start(node2, 5, 200).
+A = test2:start(node2, 10, 100).
+
+A = test2:start(node2, 50, 20).
+

@@ -1,0 +1,75 @@
+
+4> =ERROR REPORT==== 21-Jul-2018::01:58:38.798000 ===
+Can't load module 'logger' that resides in sticky dir
+ 
+{error,sticky_directory}
+原因是与系统内置模块冲突了，改名就好
+
+15> test:run(1000,100).
+log:cc 2 {received,{hello,57}}
+log:aa 1 {sending,{hello,57}}
+log:aa 4 {received,{hello,77}}
+log:cc 3 {sending,{hello,77}}
+log:cc 4 {received,{hello,68}}
+log:bb 1 {sending,{hello,68}}
+log:dd 6 {received,{hello,20}}
+log:aa 5 {received,{hello,20}}
+log:cc 5 {sending,{hello,20}}
+log:bb 2 {sending,{hello,20}}
+log:dd 7 {received,{hello,84}}
+log:aa 6 {sending,{hello,84}}
+log:dd 8 {received,{hello,16}}
+log:bb 3 {sending,{hello,16}}
+log:bb 8 {received,{hello,7}}
+log:dd 9 {received,{hello,97}}
+log:cc 6 {sending,{hello,97}}
+log:aa 7 {sending,{hello,7}}
+log:cc 11 {received,{hello,100}}
+log:aa 8 {sending,{hello,23}}
+log:dd 10 {sending,{hello,100}}
+log:dd 11 {received,{hello,23}}
+log:dd 13 {received,{hello,20}}
+log:aa 15 {received,{hello,40}}
+log:cc 12 {sending,{hello,20}}
+log:dd 14 {sending,{hello,40}}
+log:cc 13 {received,{hello,60}}
+log:bb 9 {sending,{hello,60}}
+log:cc 17 {received,{hello,56}}
+log:aa 16 {sending,{hello,56}}
+log:dd 18 {received,{hello,18}}
+log:cc 18 {received,{hello,79}}
+log:bb 10 {sending,{hello,79}}
+log:aa 17 {sending,{hello,18}}
+log:cc 19 {received,{hello,33}}
+log:bb 11 {sending,{hello,33}}
+log:aa 20 {received,{hello,95}}
+log:dd 19 {sending,{hello,95}}
+log:dd 20 {received,{hello,39}}
+log:bb 12 {sending,{hello,39}}
+log:bb 21 {received,{hello,90}}
+log:dd 22 {received,{hello,29}}
+log:cc 20 {sending,{hello,90}}
+log:aa 21 {sending,{hello,29}}
+log:dd 23 {received,{hello,96}}
+log:aa 22 {sending,{hello,96}}
+log:aa 23 {received,{hello,40}}
+log:aa 25 {received,{hello,32}}
+log:dd 24 {sending,{hello,32}}
+log:bb 22 {sending,{hello,40}}
+log:aa 26 {received,{hello,53}}
+log:dd 25 {sending,{hello,53}}
+log:cc 27 {received,{hello,65}}
+log:dd 26 {sending,{hello,65}}
+log:aa 27 {received,{hello,83}}
+log:bb 23 {sending,{hello,83}}
+log:aa 28 {received,{hello,89}}
+log:dd 27 {sending,{hello,89}}
+log:bb 29 {received,{hello,27}}
+log:cc 28 {sending,{hello,27}}
+log:aa 29 {received,{hello,21}}
+log:dd 28 {sending,{hello,21}}
+log:dd 31 {received,{hello,33}}
+log:aa 30 {sending,{hello,33}}
+log:cc 32 {received,{hello,38}}
+log:aa 31 {sending,{hello,38}}
+stop

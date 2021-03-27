@@ -1,0 +1,40 @@
+IP name: enp0s31f6
+
+erl -name china@192.168.0.114 -setcookie routy -connect_all false
+
+routy:start(beijing).
+routy:start(henan).
+
+beijing!{add, henan, {henan,'china@192.168.0.114'}}.
+henan!{add, beijing, {beijing,'china@192.168.0.114'}}.
+henan!{add, shanghai, {shanghai, 'china@192.168.0.114'}}.
+beijshanghai!{add, henan, {henan, 'china@192.168.0.114'}}.
+
+beijing!{add, stockholm ,{stockholm, 'sweden@192.168.0.116'}}.
+
+%% adding wrong nodes
+beijing!{add, xian ,{xian, 'china@192.168.0.114'}}.
+
+
+beijing!broadcast.
+henan!broadcast.
+
+beijing!{send, henan, "hello, henan."}.
+
+%reflexive links
+%%end up in an infinite loop.
+beijing!{send, beijing, "hello, myself"}.
+
+----------------------
+erl -name sweden@192.168.0.116 -setcookie routy -connect_all false
+
+routy:start(stockholm).
+routy:start(lund).
+routy:start(goteborg).
+
+lund!{add, stockholm ,{stockholm, 'sweden@192.168.0.116'}}.
+stockholm!{add, lund ,{lund, 'sweden@192.168.0.116'}}.
+stockholm!{add, goteborg ,{goteborg, 'sweden@192.168.0.116'}}.
+stockholm!{add, lund ,{lund, 'sweden@192.168.0.116'}}.
+
+stockholm!{add, beijing ,{beijing, 'china@192.168.0.114'}}.

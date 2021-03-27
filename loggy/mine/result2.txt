@@ -1,0 +1,470 @@
+[<0.86.0>,<0.87.0>,<0.88.0>,<0.89.0>,<0.90.0>]
+        {aa,1,{sending,{hello,23}}}
+---------------------
+log: aa 1 {sending,{hello,23}}
+---------------------
+        {bb,1,{sending,{hello,91}}}
+---------------------
+log: bb 1 {sending,{hello,91}}
+---------------------
+        {bb,2,{sending,{hello,24}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+---------------------
+log: bb 2 {sending,{hello,24}}
+---------------------
+---------------------
+log: aa 2 {sending,{hello,96}}
+---------------------
+---------------------
+log: dd 2 {received,{hello,23}}
+---------------------
+        {bb,3,{sending,{hello,8}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+---------------------
+log: bb 3 {sending,{hello,8}}
+---------------------
+---------------------
+log: cc 3 {received,{hello,96}}
+---------------------
+---------------------
+log: cc 4 {received,{hello,91}}
+---------------------
+---------------------
+log: cc 5 {sending,{hello,90}}
+---------------------
+---------------------
+log: cc 6 {sending,{hello,9}}
+---------------------
+---------------------
+log: aa 6 {received,{hello,90}}
+---------------------
+---------------------
+log: aa 7 {sending,{hello,5}}
+---------------------
+---------------------
+log: dd 7 {received,{hello,9}}
+---------------------
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+---------------------
+log: aa 8 {received,{hello,8}}
+---------------------
+---------------------
+log: dd 8 {sending,{hello,57}}
+---------------------
+        {aa,9,{sending,{hello,37}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+---------------------
+log: aa 9 {sending,{hello,37}}
+---------------------
+---------------------
+log: dd 9 {sending,{hello,100}}
+---------------------
+---------------------
+log: cc 9 {received,{hello,57}}
+---------------------
+        {aa,10,{sending,{hello,40}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+---------------------
+log: aa 10 {sending,{hello,40}}
+---------------------
+---------------------
+log: dd 10 {sending,{hello,63}}
+---------------------
+---------------------
+log: cc 10 {received,{hello,24}}
+---------------------
+---------------------
+log: dd 11 {sending,{hello,76}}
+---------------------
+---------------------
+log: bb 11 {received,{hello,63}}
+---------------------
+---------------------
+log: cc 11 {received,{hello,5}}
+---------------------
+---------------------
+log: dd 12 {sending,{hello,90}}
+---------------------
+---------------------
+log: bb 12 {received,{hello,37}}
+---------------------
+---------------------
+log: cc 12 {received,{hello,100}}
+---------------------
+---------------------
+log: bb 13 {received,{hello,40}}
+---------------------
+---------------------
+log: cc 13 {received,{hello,76}}
+---------------------
+---------------------
+log: cc 14 {received,{hello,90}}
+---------------------
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {dd,17,{sending,{hello,37}}}
+        {bb,18,{received,{hello,37}}}
+        {bb,19,{sending,{hello,70}}}
+---------------------
+log: cc 15 {sending,{hello,46}}
+---------------------
+---------------------
+log: dd 16 {received,{hello,46}}
+---------------------
+---------------------
+log: dd 17 {sending,{hello,37}}
+---------------------
+---------------------
+log: bb 18 {received,{hello,37}}
+---------------------
+---------------------
+log: bb 19 {sending,{hello,70}}
+---------------------
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+---------------------
+log: bb 20 {sending,{hello,37}}
+---------------------
+---------------------
+log: dd 20 {received,{hello,70}}
+---------------------
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+---------------------
+log: dd 21 {sending,{hello,73}}
+---------------------
+---------------------
+log: bb 21 {sending,{hello,88}}
+---------------------
+---------------------
+log: aa 21 {received,{hello,37}}
+---------------------
+        {dd,22,{sending,{hello,66}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+---------------------
+log: dd 22 {sending,{hello,66}}
+---------------------
+---------------------
+log: aa 22 {sending,{hello,35}}
+---------------------
+---------------------
+log: cc 22 {received,{hello,88}}
+---------------------
+        {aa,23,{received,{hello,66}}}
+        {cc,23,{sending,{hello,74}}}
+---------------------
+log: aa 23 {received,{hello,66}}
+---------------------
+---------------------
+log: cc 23 {sending,{hello,74}}
+---------------------
+        {aa,24,{sending,{hello,85}}}
+        {bb,24,{received,{hello,74}}}
+        {dd,25,{received,{hello,85}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {cc,28,{sending,{hello,44}}}
+        {cc,29,{sending,{hello,64}}}
+        {bb,29,{received,{hello,44}}}
+---------------------
+log: aa 24 {sending,{hello,85}}
+---------------------
+---------------------
+log: bb 24 {received,{hello,74}}
+---------------------
+---------------------
+log: dd 25 {received,{hello,85}}
+---------------------
+---------------------
+log: bb 25 {sending,{hello,45}}
+---------------------
+---------------------
+log: bb 26 {received,{hello,73}}
+---------------------
+---------------------
+log: cc 26 {received,{hello,45}}
+---------------------
+---------------------
+log: cc 27 {received,{hello,35}}
+---------------------
+---------------------
+log: cc 28 {sending,{hello,44}}
+---------------------
+---------------------
+log: cc 29 {sending,{hello,64}}
+---------------------
+---------------------
+log: bb 29 {received,{hello,44}}
+---------------------
+        {cc,30,{sending,{hello,46}}}
+        {bb,30,{received,{hello,64}}}
+---------------------
+log: cc 30 {sending,{hello,46}}
+---------------------
+---------------------
+log: bb 30 {received,{hello,64}}
+---------------------
+        {bb,31,{sending,{hello,89}}}
+        {dd,31,{received,{hello,46}}}
+---------------------
+log: bb 31 {sending,{hello,89}}
+---------------------
+---------------------
+log: dd 31 {received,{hello,46}}
+---------------------
+        {aa,32,{received,{hello,89}}}
+        {dd,32,{sending,{hello,66}}}
+---------------------
+log: aa 32 {received,{hello,89}}
+---------------------
+---------------------
+log: dd 32 {sending,{hello,66}}
+---------------------
+        {aa,33,{sending,{hello,18}}}
+        {dd,33,{sending,{hello,72}}}
+        {cc,33,{received,{hello,66}}}
+---------------------
+log: aa 33 {sending,{hello,18}}
+---------------------
+---------------------
+log: dd 33 {sending,{hello,72}}
+---------------------
+---------------------
+log: cc 33 {received,{hello,66}}
+---------------------
+        {dd,34,{sending,{hello,71}}}
+        {cc,34,{sending,{hello,75}}}
+        {bb,34,{received,{hello,72}}}
+---------------------
+log: dd 34 {sending,{hello,71}}
+---------------------
+---------------------
+log: cc 34 {sending,{hello,75}}
+---------------------
+---------------------
+log: bb 34 {received,{hello,72}}
+---------------------
+        {dd,35,{sending,{hello,15}}}
+        {cc,35,{received,{hello,71}}}
+        {bb,35,{received,{hello,18}}}
+---------------------
+log: dd 35 {sending,{hello,15}}
+---------------------
+---------------------
+log: cc 35 {received,{hello,71}}
+---------------------
+---------------------
+log: bb 35 {received,{hello,18}}
+---------------------
+        {dd,36,{sending,{hello,47}}}
+        {cc,36,{sending,{hello,61}}}
+        {bb,36,{received,{hello,75}}}
+---------------------
+log: dd 36 {sending,{hello,47}}
+---------------------
+---------------------
+log: cc 36 {sending,{hello,61}}
+---------------------
+---------------------
+log: bb 36 {received,{hello,75}}
+---------------------
+        {dd,37,{sending,{hello,86}}}
+        {cc,37,{sending,{hello,99}}}
+        {bb,37,{sending,{hello,49}}}
+        {aa,37,{received,{hello,61}}}
+        {cc,38,{sending,{hello,63}}}
+        {aa,38,{received,{hello,49}}}
+        {cc,39,{received,{hello,86}}}
+        {aa,39,{received,{hello,15}}}
+        {aa,40,{sending,{hello,68}}}
+        {aa,41,{received,{hello,99}}}
+        {bb,41,{received,{hello,68}}}
+        {aa,42,{received,{hello,63}}}
+        {bb,42,{received,{hello,47}}}
+        {bb,43,{sending,{hello,60}}}
+        {bb,44,{sending,{hello,13}}}
+        {aa,44,{received,{hello,60}}}
+---------------------
+log: dd 37 {sending,{hello,86}}
+---------------------
+---------------------
+log: cc 37 {sending,{hello,99}}
+---------------------
+---------------------
+log: bb 37 {sending,{hello,49}}
+---------------------
+---------------------
+log: aa 37 {received,{hello,61}}
+---------------------
+---------------------
+log: cc 38 {sending,{hello,63}}
+---------------------
+---------------------
+log: aa 38 {received,{hello,49}}
+---------------------
+---------------------
+log: cc 39 {received,{hello,86}}
+---------------------
+---------------------
+log: aa 39 {received,{hello,15}}
+---------------------
+---------------------
+log: aa 40 {sending,{hello,68}}
+---------------------
+---------------------
+log: aa 41 {received,{hello,99}}
+---------------------
+---------------------
+log: bb 41 {received,{hello,68}}
+---------------------
+---------------------
+log: aa 42 {received,{hello,63}}
+---------------------
+---------------------
+log: bb 42 {received,{hello,47}}
+---------------------
+---------------------
+log: bb 43 {sending,{hello,60}}
+---------------------
+---------------------
+log: bb 44 {sending,{hello,13}}
+---------------------
+---------------------
+log: aa 44 {received,{hello,60}}
+---------------------
+        {bb,45,{sending,{hello,44}}}
+        {aa,45,{sending,{hello,45}}}
+---------------------
+log: bb 45 {sending,{hello,44}}
+---------------------
+---------------------
+log: aa 45 {sending,{hello,45}}
+---------------------
+        {bb,46,{sending,{hello,17}}}
+        {aa,46,{received,{hello,13}}}
+        {cc,46,{received,{hello,45}}}
+---------------------
+log: bb 46 {sending,{hello,17}}
+---------------------
+---------------------
+log: aa 46 {received,{hello,13}}
+---------------------
+---------------------
+log: cc 46 {received,{hello,45}}
+---------------------
+        {cc,47,{sending,{hello,98}}}
+        {dd,47,{received,{hello,17}}}
+        {aa,47,{received,{hello,44}}}
+---------------------
+log: cc 47 {sending,{hello,98}}
+---------------------
+---------------------
+log: dd 47 {received,{hello,17}}
+---------------------
+---------------------
+log: aa 47 {received,{hello,44}}
+---------------------
+        {aa,48,{sending,{hello,50}}}
+        {cc,48,{sending,{hello,58}}}
+        {bb,48,{received,{hello,98}}}
+---------------------
+log: aa 48 {sending,{hello,50}}
+---------------------
+---------------------
+log: cc 48 {sending,{hello,58}}
+---------------------
+---------------------
+log: bb 48 {received,{hello,98}}
+---------------------
+        {aa,49,{sending,{hello,9}}}
+        {bb,49,{sending,{hello,42}}}
+        {bb,50,{received,{hello,58}}}
+        {dd,50,{received,{hello,42}}}
+---------------------
+log: aa 49 {sending,{hello,9}}
+---------------------
+---------------------
+log: bb 49 {sending,{hello,42}}
+---------------------
+---------------------
+log: bb 50 {received,{hello,58}}
+---------------------
+---------------------
+log: dd 50 {received,{hello,42}}
+---------------------
+        {bb,51,{sending,{hello,75}}}
+        {dd,51,{received,{hello,50}}}
+---------------------
+log: bb 51 {sending,{hello,75}}
+---------------------
+---------------------
+log: dd 51 {received,{hello,50}}
+---------------------
+        {dd,52,{received,{hello,9}}}
+        {cc,52,{received,{hello,75}}}
+---------------------
+log: dd 52 {received,{hello,9}}
+---------------------
+---------------------
+log: cc 52 {received,{hello,75}}
+---------------------
+        {dd,53,{sending,{hello,15}}}
+        {cc,53,{sending,{hello,23}}}
+---------------------
+log: dd 53 {sending,{hello,15}}
+---------------------
+---------------------
+log: cc 53 {sending,{hello,23}}
+---------------------
+        {cc,54,{sending,{hello,61}}}
+        {dd,54,{sending,{hello,24}}}
+        {aa,54,{received,{hello,23}}}
+---------------------
+log: cc 54 {sending,{hello,61}}
+---------------------
+---------------------
+log: dd 54 {sending,{hello,24}}
+---------------------
+---------------------
+log: aa 54 {received,{hello,23}}
+---------------------
+        {dd,55,{sending,{hello,40}}}
+        {cc,55,{received,{hello,24}}}
+        {aa,55,{sending,{hello,7}}}
+---------------------
+log: dd 55 {sending,{hello,40}}
+---------------------
+---------------------
+log: cc 55 {received,{hello,24}}
+---------------------
+---------------------
+log: aa 55 {sending,{hello,7}}
+---------------------
+        {dd,56,{sending,{hello,66}}}
+        {cc,56,{received,{hello,40}}}
+        {aa,56,{received,{hello,61}}}
+        {bb,56,{received,{hello,7}}}
+---------------------

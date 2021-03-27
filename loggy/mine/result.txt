@@ -1,0 +1,684 @@
+2> test:start().
+[<0.86.0>,<0.87.0>,<0.88.0>,<0.89.0>,<0.90.0>]
+        {dd,2,{received,{hello,23}}}
+        {aa,1,{sending,{hello,23}}}         %choosen
+        {dd,2,{received,{hello,23}}}
+        {aa,1,{sending,{hello,23}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {aa,1,{sending,{hello,23}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+---------------------
+log: aa 1 {sending,{hello,23}}
+---------------------
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {aa,6,{received,{hello,90}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {aa,6,{received,{hello,90}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {aa,6,{received,{hello,90}}}
+        {dd,7,{received,{hello,9}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {dd,7,{received,{hello,9}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {dd,7,{received,{hello,9}}}
+        {cc,9,{received,{hello,57}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {cc,9,{received,{hello,57}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+        {bb,1,{sending,{hello,91}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+        {bb,2,{sending,{hello,24}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+---------------------
+log: bb 1 {sending,{hello,91}}
+---------------------
+        {bb,2,{sending,{hello,24}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,2,{sending,{hello,24}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,2,{sending,{hello,24}}}
+        {aa,2,{sending,{hello,96}}}
+        {dd,2,{received,{hello,23}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,3,{sending,{hello,8}}}
+        {cc,3,{received,{hello,96}}}
+        {cc,4,{received,{hello,91}}}
+        {cc,5,{sending,{hello,90}}}
+        {cc,6,{sending,{hello,9}}}
+        {aa,6,{received,{hello,90}}}
+        {aa,7,{sending,{hello,5}}}
+        {dd,7,{received,{hello,9}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+---------------------
+log: bb 2 {sending,{hello,24}}
+---------------------
+---------------------
+log: aa 2 {sending,{hello,96}}
+---------------------
+---------------------
+log: dd 2 {received,{hello,23}}
+---------------------
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {cc,10,{received,{hello,24}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+---------------------
+log: bb 3 {sending,{hello,8}}
+---------------------
+---------------------
+log: cc 3 {received,{hello,96}}
+---------------------
+---------------------
+log: cc 4 {received,{hello,91}}
+---------------------
+---------------------
+log: cc 5 {sending,{hello,90}}
+---------------------
+---------------------
+log: cc 6 {sending,{hello,9}}
+---------------------
+---------------------
+log: aa 6 {received,{hello,90}}
+---------------------
+---------------------
+log: aa 7 {sending,{hello,5}}
+---------------------
+---------------------
+log: dd 7 {received,{hello,9}}
+---------------------
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {aa,8,{received,{hello,8}}}
+        {dd,8,{sending,{hello,57}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {aa,9,{sending,{hello,37}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+---------------------
+log: aa 8 {received,{hello,8}}
+---------------------
+---------------------
+log: dd 8 {sending,{hello,57}}
+---------------------
+        {aa,9,{sending,{hello,37}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {dd,16,{received,{hello,46}}}
+        {aa,9,{sending,{hello,37}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {aa,9,{sending,{hello,37}}}
+        {dd,9,{sending,{hello,100}}}
+        {cc,9,{received,{hello,57}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {aa,10,{sending,{hello,40}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+---------------------
+log: aa 9 {sending,{hello,37}}
+---------------------
+---------------------
+log: dd 9 {sending,{hello,100}}
+---------------------
+---------------------
+log: cc 9 {received,{hello,57}}
+---------------------
+        {aa,10,{sending,{hello,40}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {bb,18,{received,{hello,37}}}
+        {aa,10,{sending,{hello,40}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {dd,17,{sending,{hello,37}}}
+        {bb,18,{received,{hello,37}}}
+        {aa,10,{sending,{hello,40}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {dd,17,{sending,{hello,37}}}
+        {bb,18,{received,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {aa,10,{sending,{hello,40}}}
+        {dd,10,{sending,{hello,63}}}
+        {cc,10,{received,{hello,24}}}
+        {dd,11,{sending,{hello,76}}}
+        {bb,11,{received,{hello,63}}}
+        {cc,11,{received,{hello,5}}}
+        {dd,12,{sending,{hello,90}}}
+        {bb,12,{received,{hello,37}}}
+        {cc,12,{received,{hello,100}}}
+        {bb,13,{received,{hello,40}}}
+        {cc,13,{received,{hello,76}}}
+        {cc,14,{received,{hello,90}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {dd,17,{sending,{hello,37}}}
+        {bb,18,{received,{hello,37}}}
+        {bb,19,{sending,{hello,70}}}
+        {dd,20,{received,{hello,70}}}
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {dd,17,{sending,{hello,37}}}
+        {bb,18,{received,{hello,37}}}
+        {bb,19,{sending,{hello,70}}}
+        {dd,20,{received,{hello,70}}}
+        {aa,21,{received,{hello,37}}}
+---------------------
+log: aa 10 {sending,{hello,40}}
+---------------------
+---------------------
+log: dd 10 {sending,{hello,63}}
+---------------------
+---------------------
+log: cc 10 {received,{hello,24}}
+---------------------
+---------------------
+log: dd 11 {sending,{hello,76}}
+---------------------
+---------------------
+log: bb 11 {received,{hello,63}}
+---------------------
+---------------------
+log: cc 11 {received,{hello,5}}
+---------------------
+---------------------
+log: dd 12 {sending,{hello,90}}
+---------------------
+---------------------
+log: bb 12 {received,{hello,37}}
+---------------------
+---------------------
+log: cc 12 {received,{hello,100}}
+---------------------
+---------------------
+log: bb 13 {received,{hello,40}}
+---------------------
+---------------------
+log: cc 13 {received,{hello,76}}
+---------------------
+---------------------
+log: cc 14 {received,{hello,90}}
+---------------------
+        {cc,15,{sending,{hello,46}}}
+        {dd,16,{received,{hello,46}}}
+        {dd,17,{sending,{hello,37}}}
+        {bb,18,{received,{hello,37}}}
+        {bb,19,{sending,{hello,70}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {aa,21,{received,{hello,37}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+---------------------
+log: cc 15 {sending,{hello,46}}
+---------------------
+---------------------
+log: dd 16 {received,{hello,46}}
+---------------------
+---------------------
+log: dd 17 {sending,{hello,37}}
+---------------------
+---------------------
+log: bb 18 {received,{hello,37}}
+---------------------
+---------------------
+log: bb 19 {sending,{hello,70}}
+---------------------
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {cc,26,{received,{hello,45}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {cc,26,{received,{hello,45}}}
+        {bb,20,{sending,{hello,37}}}
+        {dd,20,{received,{hello,70}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+---------------------
+log: bb 20 {sending,{hello,37}}
+---------------------
+---------------------
+log: dd 20 {received,{hello,70}}
+---------------------
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {bb,29,{received,{hello,44}}}
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {cc,28,{sending,{hello,44}}}
+        {bb,29,{received,{hello,44}}}
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+        {aa,23,{received,{hello,66}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {cc,28,{sending,{hello,44}}}
+        {bb,29,{received,{hello,44}}}
+        {dd,21,{sending,{hello,73}}}
+        {bb,21,{sending,{hello,88}}}
+        {aa,21,{received,{hello,37}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+        {aa,23,{received,{hello,66}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {cc,28,{sending,{hello,44}}}
+        {bb,29,{received,{hello,44}}}
+        {bb,30,{received,{hello,64}}}
+        {dd,22,{sending,{hello,66}}}
+        {aa,22,{sending,{hello,35}}}
+        {cc,22,{received,{hello,88}}}
+        {aa,23,{received,{hello,66}}}
+        {cc,23,{sending,{hello,74}}}
+        {bb,24,{received,{hello,74}}}
+        {bb,25,{sending,{hello,45}}}
+        {bb,26,{received,{hello,73}}}
+        {cc,26,{received,{hello,45}}}
+        {cc,27,{received,{hello,35}}}
+        {cc,28,{sending,{hello,44}}}
+        {bb,29,{received,{hello,44}}}
+        {bb,30,{received,{hello,64}}}
+---------------------
+log: dd 21 {sending,{hello,73}}
+---------------------
+---------------------
+log: bb 21 {sending,{hello,88}}
+---------------------
+---------------------
+log: aa 21 {received,{hello,37}}
+---------------------
